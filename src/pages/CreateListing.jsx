@@ -141,6 +141,7 @@ function onChange(e) {
         imgUrls,
         geolocation,
         timestamp: serverTimestamp(),
+        userRef: auth.currentUser.uid,
       };
       
       delete formDataCopy.images;
@@ -256,7 +257,7 @@ function onChange(e) {
                         <input type="number" id="regularPrice" value={regularPrice} onChange={onChange} min="5" max="900000000000000000" required className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"/>
                         {type == "rent" && (
                         <div className="">
-                            <p className="text-md w-full whitespace-nowrap">₦ / Month</p>
+                            <p className="text-md w-full whitespace-nowrap">₦ / Year</p>
                         </div>
                     )}
                     </div>
@@ -272,7 +273,7 @@ function onChange(e) {
                              <input type="number" id="discountedPrice" value={discountedPrice} onChange={onChange} min="5" max="900000000000000000" required={offer} className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"/>
                              {type == "rent" && (
                              <div className="">
-                                 <p className="text-md w-full whitespace-nowrap">₦ / Month</p>
+                                 <p className="text-md w-full whitespace-nowrap">₦ / Year</p>
                              </div>
                          )}
                          </div>
