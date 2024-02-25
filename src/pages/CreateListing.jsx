@@ -62,7 +62,7 @@ function onChange(e) {
         toast.error("Discounted Price needs to be less than regular price")
         return; 
     }
-    if(images.length > 160){
+    if(images.length > 1600000000000000000000000){
         setLoading(false);
         toast.error("Maximum amount of image exceeded");
         return;
@@ -164,7 +164,7 @@ function onChange(e) {
     <main className="max-w-md px-2 mx-auto">
         <h1 className="text-3xl text-center mt-6 font-bold">Create a Listing</h1>
         <form onSubmit={onSubmit}>
-            <p className="text-lg mt-6 font-semibold"> Sell / Rent</p>
+            <p className="text-lg mt-6 font-semibold"> Sell / Rent / Shortlet</p>
             <div className="flex">
                 <button type="button" id="type" value="sale" onClick={onChange} className={`mr-3 px-7 py-3 font-medium text-sm uppercase shadow-md rounded hover:shadow-lg focus:shadow-lg active:shadow-lg transition duration-150 ease-in-out w-full ${
                     type == "rent" ? "bg-white text-black" : "bg-slate-600 text-white"
@@ -237,7 +237,7 @@ function onChange(e) {
             focus:border-slate-600 mb-6"/>
 
 
-<p className="text-lg font-semibold"> Offer </p>
+<p className="text-lg font-semibold"> Shortlet </p>
             <div className="flex mb-6">
                 <button type="button" id="offer" value={true} onClick={onChange} className={`mr-3 px-7 py-3 font-medium text-sm uppercase shadow-md rounded hover:shadow-lg focus:shadow-lg active:shadow-lg transition duration-150 ease-in-out w-full ${
                     !offer ? "bg-white text-black" : "bg-slate-600 text-white"
@@ -252,7 +252,7 @@ function onChange(e) {
             </div>
             <div className="flex items-center mb-6">
                 <div>
-                    <p className="text-lg font-semibold">Regular price</p>
+                    <p className="text-lg font-semibold">Annual price</p>
                     <div className="flex w-full justify-center items-center space-x-6">
                         <input type="number" id="regularPrice" value={regularPrice} onChange={onChange} min="5" max="900000000000000000" required className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"/>
                         {type == "rent" && (
@@ -268,7 +268,7 @@ function onChange(e) {
             {offer && (
                      <div className="flex items-center mb-6">
                      <div>
-                         <p className="text-lg font-semibold">Discounted price</p>
+                         <p className="text-lg font-semibold">Daily price</p>
                          <div className="flex w-full justify-center items-center space-x-6">
                              <input type="number" id="discountedPrice" value={discountedPrice} onChange={onChange} min="5" max="900000000000000000" required={offer} className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"/>
                              {type == "rent" && (
