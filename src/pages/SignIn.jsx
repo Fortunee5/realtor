@@ -25,7 +25,7 @@ export default function SignIn() {
       const auth = getAuth()
       const userCredential = await signInWithEmailAndPassword(auth, email, password)
       if(userCredential.user){
-        navigate("/")
+        navigate("/profile")
       }
     } catch (error) {
       toast.error("Bad user credentials")
