@@ -1,7 +1,7 @@
 import { AbsoluteCenter, IconButton, chakra} from '@chakra-ui/react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
-import { FaWhatsapp, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaWhatsapp, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import { FiX } from 'react-icons/fi';
 import { HiChatAlt2 } from 'react-icons/hi';
  
@@ -46,6 +46,11 @@ const ContactCards = () => {
       icon: <FaWhatsapp />,
       url: 'https://wa.link/m8zpeg',
       color: 'green',
+    },
+    {
+      icon: <FaEnvelope />,
+      url: 'mailto:kayodesolarin@yahoo.com',
+      color: 'gray',
     },
   ];
 
