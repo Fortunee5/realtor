@@ -32,7 +32,16 @@ export default function About() {
                   <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z" />
                 </svg> Lagos State - Nigeria
               </p>
-              <p className="pt-8 text-sm">Kayode Solarin, a certified professional Realtor, was born in the 1980s in Lagos State. He studied Accounting at Lagos State Polytechnic and worked in various establishment firms. He is the CEO/Founder of STANDOUT ABODE, a real estate consultancy firm, and the President of Standout Realtors/Undefeatable Realtors Group. With over 7 years in the industry, he has helped numerous realtors realize their potential and become independent. He has made 197 happy clients and is known for his integrity and transparency. Solarin is a goal-getter and dedicated realtor, known for his ability to guide clients through the real estate process. Follow him on social media @KayodeSolarin.</p>
+              <p className="pt-8 text-sm">Kayode Solarin is a certified professional Realtor, he was born in the 1980s in Somolu area of Lagos State to the family of Taiwo Solarin and the late Francis Solarin. He attended Odunlade Primary School where he had his First School Leaving Certificate and proceed to Angus Memorial High School. He is an indigene of Iperu Remo of Ikenne Local Govt. Area of Ogun State. He believes moving out from where he was born will have a positive impact on his life. He studied Accounting at Lagos State Polytechnic. He worked in different establishment firms to garner experience. He married Titilayo Solarin back in 2012.
+
+                Kayode Solarin is the CEO/Founder of STANDOUT ABODE a real estate consultancy firm registered under the law as STANDOUT ASSET ASSET HOMES INVESTMENT LTD (RC1760786). He's the President of Standout Realtors / Undefeatable Realtors Group. He has successfully put numerous realtors on the map to make them independent and realized their potential. He has been in the corridor of real estate industry right since 2015; but joined the industry fully 4years ago. He's an outstanding realtor. 
+                Being in the industry for 7years, he discovered that there are lots of abnormalities in the industry, He came to this industry to sanitise and curb the hoax by some dubious agents out there. He has been one of the top-selling realtors to be reckoned with, winning multiple awards and incentives. He's a goal getter, he's a selfless and dedicated realtor, he is your go-to Realtor for all your Real Estate needs and he's always ready to guide you through the seamless acquisition of it.  
+
+                He has successfully made 197 happy clients proud house owners and landowners within a short period of time. When he is not on-site, he's strengthening his existing relationships, he's closing deals, building new ones, or giving Real Estate investment advisory. 
+
+                He's loved by the clients, that's what makes the customers keeps coming back and giving him referrals because of his integrity and transparency.  Kayode Solarin he's building a legacy that will last for life.
+                Welcome to Kayode Solarin's world. He will love to hear from you. Follow him on social media @KayodeSolarin
+          </p>
              
               <div className="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
                 <a className="link" href="https://www.facebook.com/standout.abode" data-tippy-content="@facebook_handle">
@@ -91,6 +100,7 @@ export default function About() {
             <button className="js-change-theme focus:outline-none" onClick={toggleTheme}>{isLightMode ? "🌙" : "☀️"}</button>
           </div>
         </div>
+       
       </body>
       <Footer/>
     </div>

@@ -19,6 +19,8 @@ import DevP from "./pages/DevP"
 import CreateBlog from "./pages/CreateBlog"
 import Blogbackend from "./pages/Blogbackend"
 import BlogPost from "./pages/BlogPost"
+import ContactCards from "./pages/ContactCards"
+import ImageSlider from "./pages/ImageSlider"
 // import Contact from "./pages/Contact"
 //import CreateListing from "./pages/CreateListing";
  function App() {
@@ -41,6 +43,8 @@ import BlogPost from "./pages/BlogPost"
     <Route path="/createblog" element={<CreateBlog/>}/>
     <Route path="/blogbackend" element={<Blogbackend/>}/>
     <Route path="/blogpost" element={<BlogPost/>}/>
+    <Route path="/contactcards" element={<ContactCards/>}/>
+    <Route path="/imageslider" element={<ImageSlider/>}/>
     <Route path="/forgot-password" element={<ForgotPassword/>}/>
     <Route path="/category/:categoryName/:listingId" element={<Listing/>}/>
     <Route path="/offers" element={<Offers/>}/>
