@@ -15,6 +15,14 @@ import Slider from "../components/Slider";
 import { db } from "../firebase";
 import Footer from "./Footer";
 import Blocks from "./Blocks";
+ import ContactCards from "./ContactCards";
+ import logo from '../assets/image/trust.jpg';
+import logo1 from '../assets/image/trust1.jpg';
+import logo2 from '../assets/image/trust2.jpg';
+import logo3 from '../assets/image/trust3.jpg';
+import logo4 from '../assets/image/trust4.jpg';
+import ImageSlider from "./ImageSlider";
+
 export default function Home() {
   // Offers
   const [offerListings, setOfferListings] = useState(null);
@@ -172,8 +180,31 @@ export default function Home() {
           </div>
         )}
       </div>
-
+      <div class="aspect-w-16 aspect-h-9 md:mx-auto flex items-center justify-center">
+  <iframe src="https://www.youtube.com/embed/mTNvFWWAQlE" 
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen
+  width="600"
+  height="400">
+  </iframe>
+</div>
                 <Blocks/>
+             
+      <ImageSlider
+        images={[
+          logo,
+          logo1,
+          logo2,
+          logo3,
+          logo4
+          
+        ]}
+        width="10"
+        height="10"
+        
+      />
+
       <div class="container my-24 mx-auto md:px-6">
   <section class="mb-32 text-center">
     <h2 class="mb-12 text-3xl font-bold">Testimonials</h2>
@@ -319,6 +350,7 @@ export default function Home() {
         </ul>
       </div>
     </div>
+    <ContactCards/>
   </section>
 </div>
 <Footer/>

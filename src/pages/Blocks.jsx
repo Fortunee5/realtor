@@ -2,19 +2,16 @@ import React, { useState } from 'react';
 import logo from '../assets/image/building.png';
 import logos from '../assets/image/house.png';
 import logoes from '../assets/image/loan.png';
-import trust from '../assets/image/trust.jpg';
-import trust1 from '../assets/image/trust1.jpg';
-import trust2 from '../assets/image/trust2.jpg';
-import trust3 from '../assets/image/trust3.jpg';
-import trust4 from '../assets/image/trust4.jpg';
-import { Carousel } from 'flowbite-react'; 
-export default function Blocks(){
+ 
+ export default function Blocks(){
     return(
         <div>
             
           
             <div class="py-16">
             <div class="xl:container m-auto space-y-12 px-6 md:px-12 lg:px-20">
+         
+          
     <div>
       <h2 class="mt-4 text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
         A Realtor You Can <br class="sm:block" hidden />
@@ -39,7 +36,7 @@ export default function Blocks(){
             Embark on Your Homeownership Journey with Confidence: Our Dedicated Realtors Offer Expert Guidance to Help You Find Your Dream Home. Trust Us to Navigate the Real Estate Market Together. Welcome Home!
             </p>
             <a
-              href="/about"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScbj-rnYEp7ZP6AfTlHnf7_CZ_lfvEqW9WY3mu2UfMTjdEdAA/viewform?usp=pp_url"
               class="group relative flex mx-auto h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative w-5 h-5 text-gray-600 dark:text-white transition duration-300 group-hover:translate-x-1">
@@ -66,7 +63,7 @@ export default function Blocks(){
             Seize Your Opportunity: Explore Vast Possibilities with Our Premier Land Listings. Whether You Seek a Place to Build Your Dreams or Expand Investments, Let Us Guide You to Your Perfect Parcel. Welcome to Your Future!
             </p>
             <a
-              href="/about"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScbj-rnYEp7ZP6AfTlHnf7_CZ_lfvEqW9WY3mu2UfMTjdEdAA/viewform?usp=pp_url"
               class="group relative flex mx-auto h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative w-5 h-5 text-gray-600 dark:text-white transition duration-300 group-hover:translate-x-1">
@@ -93,7 +90,7 @@ export default function Blocks(){
             Unlocking Wealth through Real Estate: Join Our Investment Firm in Maximizing Returns and Diversifying Portfolios. With Expertise in Property Acquisition, Management, and Growth Strategies, We're Your Partner in Building Financial Success. Welcome to Your Path to Prosperity!
             </p>
             <a
-              href="/about"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScbj-rnYEp7ZP6AfTlHnf7_CZ_lfvEqW9WY3mu2UfMTjdEdAA/viewform?usp=pp_url"
               class="group relative flex mx-auto h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative w-5 h-5 text-gray-600 dark:text-white transition duration-300 group-hover:translate-x-1">
