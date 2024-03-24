@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import logo from '../assets/image/building.png';
 import logos from '../assets/image/house.png';
 import logoes from '../assets/image/loan.png';
+import mission from '../assets/image/mission.png';
+import vision from '../assets/image/vision.png';
+import abouttuss from '../assets/image/abouttuss.png';
  
  export default function Blocks(){
     return(
         <div>
             
-          
-            <div class="py-16">
+          <div class="py-16">
             <div class="xl:container m-auto space-y-12 px-6 md:px-12 lg:px-20">
          
           
@@ -100,6 +102,68 @@ import logoes from '../assets/image/loan.png';
            </div>
            </div>
            </div>
+            {/* the mission, vision and about us page */}
+
+       <div class="p-8 py-12 sm:p-12 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+        <div class="space-y-12 text-center">
+          <img
+            src={mission}
+            class="w-16 mx-auto"
+            width="512"
+            height="512"
+            alt="burger illustration"
+          />
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">
+              Our Mission
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+            We're on the quest of helping smart investors invest in our reliable real estate investments, acquire their dream properties in choice locations without breaking the bank. We partner with the best developers to secure your future through our Real Estate Investments.
+            We STANDOUT. Talk to us TODAY
+            </p>
+            </div>
+           </div>
+           </div>
+
+         <div class="p-8 py-12 sm:p-12 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+            <div class="space-y-12 text-center">
+          <img
+            src={vision}
+            class="w-16 mx-auto"
+            width="512"
+            height="512"
+            alt="burger illustration"
+          />
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">
+              Our Vision
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+            Is to raise 10,000 Landlords and Landowners here in Lagos and some other parts of Nigeria.
+             </p>
+            </div>
+           </div>
+           </div>
+
+           <div class="p-8 py-12 sm:p-12 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+            <div class="space-y-12 text-center">
+          <img
+            src={abouttuss}
+            class="w-16 mx-auto"
+            width="512"
+            height="512"
+            alt="burger illustration"
+          />
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">
+              What We Do
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+            We at STANDOUT ABODE offer Investors the best Real Estate deals in Strategic locations in Lagos, Abuja and some other locations here in Nigeria; our properties are titled, genuine, safe and secure properties that are prone to fast appreciation.             </p>
+            </div>
+           </div>
+           </div>
+
            </div>
            </div>
            </div>
