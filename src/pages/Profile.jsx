@@ -154,6 +154,18 @@ export default function Profile() {
               Sell or rent your home
             </Link>
           </button>
+                    {/* blog button */}
+          <button
+            type="submit"
+            className="w-full bg-green-600 p-19 border-2 text-white uppercase px-7 py-3 text-sm font-medium rounded shadow-md hover:bg-gray-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-gray-800"
+          >
+            <Link
+              to="/createblogspot"
+              className="flex justify-center items-center"
+            >
+              Create a Blog
+            </Link>
+          </button>
         </div>
       </section>
       <div className="max-w-6xl px-3 mt-6 mx-auto">
