@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import blog  from '../assets/image/blog.png';
+   
+function CreateBlogSpot (){
+  
 
-function CreateBlog (){
-
-    const [title, setTitle] = useState("");
+     const [title, setTitle] = useState("");
     const [postText, setPostText] = useState("");
 
     const postsCollectionRef = collection(db, "posts");
@@ -16,7 +17,7 @@ function CreateBlog (){
         await addDoc(postsCollectionRef, {
           title,
           postText,
-        //   author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
+          // author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
         });
         navigate("/blogbackend");
       };
@@ -64,4 +65,4 @@ className="w-full px-4 py-2 text-xl text:gray-700 bg-white border border-gray-30
 </div>
     );
 }
-export default CreateBlog
+export default CreateBlogSpot

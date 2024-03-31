@@ -16,7 +16,7 @@ import About from "./pages/About"
 import Footer from "./pages/Footer"
 import Contact from "./pages/Contact"
 import DevP from "./pages/DevP"
-import CreateBlog from "./pages/CreateBlog"
+import CreateBlogSpot from "./pages/CreateBlogSpot"
 import Blogbackend from "./pages/Blogbackend"
 import BlogPost from "./pages/BlogPost"
 import ContactCards from "./pages/ContactCards"
@@ -34,14 +34,15 @@ import ImageSlider from "./pages/ImageSlider"
     <Route path="/profile" element={<PrivateRoute />}>
             <Route path="/profile" element={<Profile />} />
           </Route>
+
     
     <Route path="/sign-in" element={<SignIn/>}/>
     <Route path="/sign-up" element={<SignUp/>}/>
     <Route path="/about" element={<About/>}/>
     <Route path="/contact" element={<Contact/>}/>
     <Route path="/devp" element={<DevP/>}/>
-    <Route path="/createblog" element={<CreateBlog/>}/>
-    <Route path="/blogbackend" element={<Blogbackend/>}/>
+     <Route path="/blogbackend" element={<Blogbackend/>}/>
+    <Route path="/createblogspot" element={<CreateBlogSpot/>}/>
     <Route path="/blogpost" element={<BlogPost/>}/>
     <Route path="/contactcards" element={<ContactCards/>}/>
     <Route path="/imageslider" element={<ImageSlider/>}/>
