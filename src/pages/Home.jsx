@@ -192,18 +192,19 @@ export default function Home() {
                 <Blocks/>
              
       <ImageSlider
-        images={[
-          logo,
-          logo1,
-          logo2,
-          logo3,
-          logo4
+        // images={[
+        //   logo,
+        //   logo1,
+        //   logo2,
+        //   logo3,
+        //   logo4
           
-        ]}
-        width="10"
-        height="10"
+        // ]}
+        // width="10"
+        // height="10"
         
       />
+      
 
       <div class="container my-24 mx-auto md:px-6">
   <section class="mb-32 text-center">

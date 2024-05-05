@@ -1,75 +1,87 @@
+import React, { useState } from 'react';
+import logo from '../assets/image/trust.jpg';
+import logo1 from '../assets/image/trust1.jpg';
+import logo2 from '../assets/image/trust2.jpg';
+import logo3 from '../assets/image/trust3.jpg';
+import logo4 from '../assets/image/trust4.jpg';
 
-import { useState, useRef, useEffect } from "react";
+ export default function ImageSlider(){
+    return(
+        <div>
+            
+          <div class="py-3">
+            <div class="xl:container overflow-auto m-auto space-y-12 px-6 md:px-12 lg:px-20">
+         
+     
+    <div class="mt-1 grid gap-0 sm:w-2/3 sm:mx-auto md:w-full md:grid-cols-5 md:-mx-8 lg:grid-cols-5">
+      <div class="">
+        <div class="space-y-1 text-center">
+          <img
+            src={logo}
+            class="w-16 mx-auto"
+            width="50"
+            height="50"
+            alt="burger illustration"
+          />
+         
+        </div>
+      </div>
+      <div class="">
+        <div class="space-y-12 text-center">
+          <img
+            src={logo1}
+            class="w-16 mx-auto"
+            width="512"
+            height="512"
+            alt="burger illustration"
+          />
+          
+        </div>
+      </div>
+      <div class="">
+        <div class="space-y-12 text-center">
+          <img
+            src={logo2}
+            class="w-16 mx-auto"
+            width="512"
+            height="512"
+            alt="burger illustration"
+          />
+          
+           </div>
+           </div>
+           <div class="">
+            <div class="space-y-12 text-center">
+          <img
+            src={logo3}
+            class="w-16 mx-auto"
+            width="512"
+            height="512"
+            alt="burger illustration"
+          />
+          
+           </div>
+           </div>
+           <div class="">
+            <div class="space-y-12 text-center">
+          <img
+            src={logo4}
+            class="w-16 mx-auto"
+            width="512"
+            height="512"
+            alt="burger illustration"
+          />
+          
+           </div>
+           </div>
+           
 
-export default function ImageSlider({ images }) {
-  const indicatorWidthPercent = images.length > 0 ? 100 / images.length : 100;
+       </div>
+           </div>
+           </div>
+                                    
+            {/* for the slider of the other companies that he works with                         */}
 
-  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  const sliderRef = useRef(null);
-
-  useEffect(() => {
-    const sliderCurrent = sliderRef.current;
-
-    if (!sliderCurrent) {
-      return;
-    }
-
-    // Find all the slides inside of the slider
-    const slides = sliderCurrent.querySelectorAll("div");
-    const slidesArray = Array.from(slides);
-
-    // Wait until a slide is 50% visible, then find it's index in the array of
-    // all slides and update the currentSlideIndex
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const index = slidesArray.indexOf(entry.target);
-            setCurrentSlideIndex(index);
-          }
-        });
-      },
-      {
-        root: sliderCurrent,
-        threshold: 0.5,
-      }
+        </div>
     );
-    slides.forEach((slide) => observer.observe(slide));
-
-    return () => slides.forEach((slide) => observer.unobserve(slide));
-  }, []);
-
-  return (
-    <div className="w-full">
-      {/* Slider */}
-      <div
-        ref={sliderRef}
-        className="w-full flex flex-row overflow-x-scroll snap-x snap-mandatory"
-        style={{
-          paddingBottom: "15px",
-          clipPath: "inset(0 0 15px 0)",
-        }}
-      >
-        {images.map((url) => {
-          return (
-            <div key={url} className="w-full flex-shrink-0 snap-start">
-              <img src={url} />
-            </div>
-          );
-        })}
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="w-full h-0.5 relative bg-gray-300">
-        <div
-          className="h-0.5 absolute top-0 left-0 bg-gray-500"
-          style={{
-            width: `${indicatorWidthPercent}%`,
-            left: `${indicatorWidthPercent * currentSlideIndex}%`,
-            transition: "left 150ms ease-in-out",
-          }}
-        />
-      </div>
-    </div>
-  );
 }
