@@ -123,7 +123,13 @@ export default function Home() {
                             
                     <div>
                             <h2 class="mt-4 text-center text-2xl font-bold text-white dark:text-white md:text-4xl">
-                              LOOKING TO INVEST IN PROPERTIES WITH STANDOUT ASSETS HOME?
+                              LOOKING TO INVEST IN PROPERTIES WITH GREAT ROI?
+                            </h2>
+                            <h2 class="mt-4 text-center  font-bold text-white dark:text-white  md:text-4xl">
+                              ____________
+                            </h2>
+                            <h2 class="italic mt-4 text-center text-2xl text-white dark:text-white md:text-1xl">
+                              We've got you covered. Buying landed properties through Standout Asset Homes & Investment Ltd just got easy. We are here to ease off the stress associated with property acquisition in Nigeria.
                             </h2>
                     </div>
               </div>
