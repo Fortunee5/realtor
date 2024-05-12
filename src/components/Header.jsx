@@ -3,11 +3,12 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/image/about.jpg';
 import logo1 from '../assets/image/property.png';
+import logo2 from '../assets/image/homelogo.jpg';
 import { Link } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'offers', href: '/offers', current: false },
+  { name: 'Shortlet', href: '/offers', current: false },
   { name: 'blog', href: '/blogpost', current: false },
   { name: 'contact', href: '/contact', current: false },
 ]
@@ -40,7 +41,7 @@ export default function Header() {
                   <img
                     className="h-8 w-auto"
                     // src="https://uxwing.com/property-color-icon/"
-                     src={logo1}
+                     src={logo2}
                     alt="/"
                     href='/'
                   />
