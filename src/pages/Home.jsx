@@ -116,6 +116,19 @@ export default function Home() {
   }, []);
   return (
     <div>
+      <div>
+           
+            <div class="py-16 bg-orange-300">
+                <div class="xl:container m-auto space-y-12 px-6 md:px-12 lg:px-20 ">
+                            
+                    <div>
+                            <h2 class="mt-4 text-center text-2xl font-bold text-white dark:text-white md:text-4xl">
+                              LOOKING TO INVEST IN PROPERTIES WITH STANDOUT ASSETS HOME?
+                            </h2>
+                    </div>
+              </div>
+            </div>
+        </div>
       <Slider />
       <div className="max-w-6xl mx-auto pt-4 space-y-6">
         {offerListings && offerListings.length > 0 && (
@@ -143,9 +156,7 @@ export default function Home() {
               Places for rent
             </h2>
             <Link to="/category/rent">
-              <p className="px-3 text-sm text-blue-600 hover:text-blue-800 transition duration-150 ease-in-out">
-                Show more places for rent
-              </p>
+             
             </Link>
             <ul className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
               {rentListings.map((listing) => (
@@ -163,7 +174,7 @@ export default function Home() {
             <h2 className="px-3 text-2xl mt-6 font-semibold">
               Places for sale
             </h2>
-            <Link to="/category/sale">
+            <Link to="/sales">
               <p className="px-3 text-sm text-blue-600 hover:text-blue-800 transition duration-150 ease-in-out">
                 Show more places for sale
               </p>

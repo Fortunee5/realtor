@@ -21,6 +21,7 @@ import Blogbackend from "./pages/Blogbackend"
 import BlogPost from "./pages/BlogPost"
 import ContactCards from "./pages/ContactCards"
 import ImageSlider from "./pages/ImageSlider"
+import Sales from "./pages/Sales"
 // import Contact from "./pages/Contact"
 //import CreateListing from "./pages/CreateListing";
  function App() {
@@ -49,6 +50,7 @@ import ImageSlider from "./pages/ImageSlider"
     <Route path="/forgot-password" element={<ForgotPassword/>}/>
     <Route path="/category/:categoryName/:listingId" element={<Listing/>}/>
     <Route path="/offers" element={<Offers/>}/>
+    <Route path="/sales" element={<Sales/>}/>
     
     <Route path="create-listing" element={<PrivateRoute />}>
             <Route path="/create-listing" element={<CreateListing />} />
