@@ -118,7 +118,7 @@ export default function Home() {
     <div>
       <div>
            
-            <div class="py-16 bg-orange-300">
+            <div class="py-16 bg-orange-500">
                 <div class="xl:container m-auto space-y-12 px-6 md:px-12 lg:px-20 ">
                             
                     <div>
